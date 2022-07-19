@@ -25,3 +25,8 @@ https://wokwi.com/projects/335703435993154131<br>
 https://wokwi.com/projects/335701299799523922<br>
 13.srevometer with buzzer :<br>
 https://wokwi.com/projects/335704534482420307<br>
+
+
+***********************************************************<br>
+1. using LCD with DHT22 <br>
+https://wokwi.com/projects/337604420660363858<br>
