@@ -24,7 +24,9 @@ https://wokwi.com/projects/335703435993154131<br>
 12.Potentiometer with LED :<br>
 https://wokwi.com/projects/335701299799523922<br>
 13.srevometer with buzzer :<br>
-https://wokwi.com/projects/335704534482420307<br>
+https://wokwi.com/projects/335704534482420307<br>  
+
+
 https://wokwi.com/projects/340775764469219922 - LED_CHASER<br>
 https://wokwi.com/projects/340776572602548818 - LDR<br>
 https://wokwi.com/projects/340776926585029204 - LDR_LED<br>
