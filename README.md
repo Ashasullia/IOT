@@ -128,136 +128,136 @@ DHT11
  
  RGB
  
-    int red = D1;
-    int green = D6;
-    int blue = D7;
-    //GROUND IS CONNECTED TO 3V 
-    void setup() {
-      pinMode(red, OUTPUT);
-      pinMode(green, OUTPUT);
-      pinMode(blue, OUTPUT);
-
-    }
-
-   void loop() {
-   displayColor(0b100); //RED
-   delay(1000);
-   displayColor(0b010); //GREEN
-   delay(1000);
-   displayColor(0b001); //BLUE
-   delay(1000);
-   displayColor(0b101); //MAGENTA
-   delay(1000);
-   displayColor(0b011); //CYAN
-   delay(1000);
-   displayColor(0b110); //YELLOW
-   delay(1000);
-   displayColor(0b111); //WHITE
-   delay(1000);
-    }
-
-      void displayColor(byte color) {
-      digitalWrite(red, !bitRead(color, 2));
-      digitalWrite(green, !bitRead(color, 1));
-      digitalWrite(blue, !bitRead(color, 0));
-    }
-
-
-IR_LED
-              int ir=D7;
-             int led=D5;
-             void setup() {
-               // put your setup code here, to run once:
-               pinMode(ir,INPUT);
-                 pinMode(led,OUTPUT);
-                 Serial.begin(9600);
-
-             }
-
-          void loop() {
-            // put your main code here, to run repeatedly:
-            int irvalue=digitalRead(ir);
-            if(irvalue==LOW)
-            {
-              Serial.println("LOW");
-              digitalWrite(led,HIGH);
-            }
-            else
-            {
-              Serial.println("HIGH");
-              digitalWrite(led,LOW);
-            }
-          delay(100);
-          }
-      </br>
-      </br>
-      </br>
-                 LDR
-                 const int ldrPin=A0;
-                 void setup() {
-                   Serial.begin(9600);
-                   pinMode(ldrPin,INPUT);
-                 }
-                 void loop() {
-                   int rawData = analogRead(ldrPin);   
-                   Serial.println(rawData);
-                   delay(1000);
-                 }
-      </br>
-      </br>
-      </br>
-
-       LDR_LED
-
-          int ldr=A0;//Set A0(Analog Input) for LDR.
-          int value=0;
-          int led=D1;
+          int red = D1;
+          int green = D6;
+          int blue = D7;
+          //GROUND IS CONNECTED TO 3V 
           void setup() {
-          Serial.begin(9600);
-          pinMode(led,OUTPUT);
+            pinMode(red, OUTPUT);
+            pinMode(green, OUTPUT);
+            pinMode(blue, OUTPUT);
+
           }
 
-          void loop() {
-          value=analogRead(ldr);//Reads the Value of LDR(light).
-          Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.
-          Serial.println(value);
-          if(value<50)
-            {
-              digitalWrite(led,HIGH);//Makes the LED glow in Dark.
-            }
-            else
-            {
-              digitalWrite(led,LOW);//Turns the LED OFF in Light.
-            }
-            delay(1000);
-          }\
-       </br>
-       </br>
-             LED_CHASER
+         void loop() {
+         displayColor(0b100); //RED
+         delay(1000);
+         displayColor(0b010); //GREEN
+         delay(1000);
+         displayColor(0b001); //BLUE
+         delay(1000);
+         displayColor(0b101); //MAGENTA
+         delay(1000);
+         displayColor(0b011); //CYAN
+         delay(1000);
+         displayColor(0b110); //YELLOW
+         delay(1000);
+         displayColor(0b111); //WHITE
+         delay(1000);
+          }
 
-            int pinsCount=6;                        // declaring the integer variable pinsCount
-            int pins[] = {D0,D1,D7,D5,D3,D2};          // declaring the array pins[]
+            void displayColor(byte color) {
+            digitalWrite(red, !bitRead(color, 2));
+            digitalWrite(green, !bitRead(color, 1));
+            digitalWrite(blue, !bitRead(color, 0));
+          }
 
-            void setup() {                
-              for (int i=0; i<pinsCount; i=i+1){    // counting the variable i from 0 to 9
-                pinMode(pins[i], OUTPUT);            // initialising the pin at index i of the array of pins as OUTPUT
-              }
-            }
 
-            void loop() {
-              for (int i=0; i<pinsCount; i=i+1){    // chasing right
-                digitalWrite(pins[i], HIGH);         // switching the LED at index i on
-                delay(100);                          // stopping the program for 100 milliseconds
-                digitalWrite(pins[i], LOW);          // switching the LED at index i off
-              }
-              for (int i=pinsCount-1; i>0; i=i-1){   // chasing left (except the outer leds)
-               digitalWrite(pins[i], HIGH);         // switching the LED at index i on
-                delay(100);                          // stopping the program for 100 milliseconds
-                digitalWrite(pins[i], LOW);          // switching the LED at index i off
+      IR_LED
+                    int ir=D7;
+                   int led=D5;
+                   void setup() {
+                     // put your setup code here, to run once:
+                     pinMode(ir,INPUT);
+                       pinMode(led,OUTPUT);
+                       Serial.begin(9600);
 
-              }
-            }
-            1. using LCD with DHT22 <br>
+                   }
+
+                void loop() {
+                  // put your main code here, to run repeatedly:
+                  int irvalue=digitalRead(ir);
+                  if(irvalue==LOW)
+                  {
+                    Serial.println("LOW");
+                    digitalWrite(led,HIGH);
+                  }
+                  else
+                  {
+                    Serial.println("HIGH");
+                    digitalWrite(led,LOW);
+                  }
+                delay(100);
+                }
+            </br>
+            </br>
+            </br>
+                       LDR
+                       const int ldrPin=A0;
+                       void setup() {
+                         Serial.begin(9600);
+                         pinMode(ldrPin,INPUT);
+                       }
+                       void loop() {
+                         int rawData = analogRead(ldrPin);   
+                         Serial.println(rawData);
+                         delay(1000);
+                       }
+            </br>
+            </br>
+            </br>
+
+             LDR_LED
+
+                int ldr=A0;//Set A0(Analog Input) for LDR.
+                int value=0;
+                int led=D1;
+                void setup() {
+                Serial.begin(9600);
+                pinMode(led,OUTPUT);
+                }
+
+                void loop() {
+                value=analogRead(ldr);//Reads the Value of LDR(light).
+                Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.
+                Serial.println(value);
+                if(value<50)
+                  {
+                    digitalWrite(led,HIGH);//Makes the LED glow in Dark.
+                  }
+                  else
+                  {
+                    digitalWrite(led,LOW);//Turns the LED OFF in Light.
+                  }
+                  delay(1000);
+                }\
+             </br>
+             </br>
+                   LED_CHASER
+
+                  int pinsCount=6;                        // declaring the integer variable pinsCount
+                  int pins[] = {D0,D1,D7,D5,D3,D2};          // declaring the array pins[]
+
+                  void setup() {                
+                    for (int i=0; i<pinsCount; i=i+1){    // counting the variable i from 0 to 9
+                      pinMode(pins[i], OUTPUT);            // initialising the pin at index i of the array of pins as OUTPUT
+                    }
+                  }
+
+                  void loop() {
+                    for (int i=0; i<pinsCount; i=i+1){    // chasing right
+                      digitalWrite(pins[i], HIGH);         // switching the LED at index i on
+                      delay(100);                          // stopping the program for 100 milliseconds
+                      digitalWrite(pins[i], LOW);          // switching the LED at index i off
+                    }
+                    for (int i=pinsCount-1; i>0; i=i-1){   // chasing left (except the outer leds)
+                     digitalWrite(pins[i], HIGH);         // switching the LED at index i on
+                      delay(100);                          // stopping the program for 100 milliseconds
+                      digitalWrite(pins[i], LOW);          // switching the LED at index i off
+
+                    }
+                  }
+                  1. using LCD with DHT22 <br>
 https://wokwi.com/projects/337604420660363858<br>
 //HARDWARE<br>
 
