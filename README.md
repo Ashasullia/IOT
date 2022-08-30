@@ -48,7 +48,7 @@ https://wokwi.com/projects/340776926585029204 - LDR_LED<br>
       https://wokwi.com/projects/340893919446303316 - LED CHASER
       https://wokwi.com/projects/340936317213868626 - LDR
       https://wokwi.com/projects/340936847717827156 - LDR + LED
-
+</br>
 //HARDWARE
 
       ULTRASONIC_SENSOR
