@@ -24,13 +24,13 @@ https://wokwi.com/projects/335703435993154131<br>
 12.Potentiometer with LED :<br>
 https://wokwi.com/projects/335701299799523922<br>
 13.srevometer with buzzer :<br>
-https://wokwi.com/projects/335704534482420307<br>  
+14.https://wokwi.com/projects/335704534482420307<br>  
 
 
-https://wokwi.com/projects/340775764469219922 - LED_CHASER<br>
-https://wokwi.com/projects/340776572602548818 - LDR<br>
-https://wokwi.com/projects/340776926585029204 - LDR_LED<br>
-
+15.https://wokwi.com/projects/340775764469219922 - LED_CHASER<br>
+16.https://wokwi.com/projects/340776572602548818 - LDR<br>
+17.https://wokwi.com/projects/340776926585029204 - LDR_LED<br>
+18.https://wokwi.com/arduino/libraries/demo/electronic-safe -safe locker<br>
 
 ***********************************************************<br>
 </br>
@@ -49,6 +49,9 @@ https://wokwi.com/projects/340776926585029204 - LDR_LED<br>
       https://wokwi.com/projects/340936317213868626 - LDR<br>
       https://wokwi.com/projects/340936847717827156 - LDR + LED<br>
       https://wokwi.com/projects/342585026466021972 -seven segment led<br>
+      https://wokwi.com/projects/342587368656601684 -analog joystick and matrix7219<br>
+      https://wokwi.com/projects/309829489359061570 - led ber graph<br>
+      https://wokwi.com/projects/290043622233997832 - ultrasonic with lcd<br>
 </br>
 //HARDWARE
 
